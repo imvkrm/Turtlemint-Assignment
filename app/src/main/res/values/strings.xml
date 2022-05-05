@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Turtlemint Assignment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="loading_issues_error">Error while loading issue</string>
+    <string name="loading_comments_error">Error while loading comments</string>
+</resources>

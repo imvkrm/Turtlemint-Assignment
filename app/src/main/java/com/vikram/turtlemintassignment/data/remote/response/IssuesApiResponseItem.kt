@@ -1,0 +1,33 @@
+package com.vikram.turtlemintassignment.data.remote.response
+
+data class IssuesApiResponseItem(
+    var active_lock_reason: Any?,
+    var assignee: Any?,
+    var assignees: List<Any>?,
+    var author_association: String?,
+    var body: String?="",
+    var closed_at: Any?,
+    var comments: Int?,
+    var comments_url: String?,
+    var created_at: String?,
+    var draft: Boolean?,
+    var events_url: String?,
+    var html_url: String?,
+    var id: Int?,
+    var labels: List<Any>?,
+    var labels_url: String?,
+    var locked: Boolean?,
+    var milestone: Milestone?,
+    var node_id: String?,
+    var number: Int?,
+    var performed_via_github_app: Any?,
+    var pull_request: PullRequest?,
+    var reactions: Reactions?,
+    var repository_url: String?,
+    var state: String?,
+    var timeline_url: String?,
+    var title: String?,
+    var updated_at: String?,
+    var url: String?,
+    var user: User
+)

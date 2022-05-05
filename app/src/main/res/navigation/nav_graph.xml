@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/issuesFragment">
+    <fragment
+        android:id="@+id/issuesFragment"
+        android:name="com.vikram.turtlemintassignment.ui.issues.IssuesFragment"
+        android:label="fragment_issues"
+        tools:layout="@layout/fragment_issues">
+        <action
+            android:id="@+id/action_issuesFragment_to_infoFragment"
+            app:destination="@id/infoFragment"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.vikram.turtlemintassignment.ui.info.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" >
+        <argument
+            android:name="issueNum"
+            app:argType="integer"
+            android:defaultValue="-1" />
+    </fragment>
+</navigation>
